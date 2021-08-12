@@ -1,7 +1,7 @@
 let today = moment().format('dddd, MMMM Do');
 let currentTime = moment().hours();
 let timeIds = $(".row");
-let localData = JSON.parse(localStorage.getItem("planner-storage"));
+let storePlans = JSON.parse(localStorage.getItem("planner-storage"));
 let plannerText = [];
 
 $("#currentDay").text(today);
@@ -19,13 +19,11 @@ for (var i = 0 ; i < timeIds.length ; i++) {
         $(changedID).addClass("present");
     }
 }
-if (localData !== null) {
-    plannerText = localData;
-}
+
 
 $(".saveBtn").on("click", function() {
-    let hourID = $(this).closest(".time-block").attr("id");
-    let hourInput = $(this).closest(".description").val();
+    let hourID = $(this).parent().attr("id");
+    let hourInput = $(this).siblings(".description").val();
 
     let inputText = {"id-hour": hourID, "id-input": hourInput};
 
