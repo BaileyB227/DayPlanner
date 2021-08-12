@@ -33,29 +33,21 @@ $(".saveBtn").on("click", function() {
     localStorage.setItem(timeBlock, textValue);
 });
 
-let hour9 = localStorage.getItem("9");
-$("#9 .description").val(hour9);
-
-let hour10 = localStorage.getItem("10");
-$("#10 .description").val(hour10);
-
-let hour11 = localStorage.getItem("11");
-$("#11 .description").val(hour11);
-  
-let hour12 = localStorage.getItem("12");
-$("#12 .description").val(hour12);
-  
-let hour13 = localStorage.getItem("13");
-$("#13 .description").val(hour13);
-  
-let hour14 = localStorage.getItem("14");
-$("#14 .description").val(hour14);
-  
-let hour15 = localStorage.getItem("15");
-$("#15 .description").val(hour15);
-  
-let hour16 = localStorage.getItem("16");
-$("#16 .description").val(hour16);
-  
-let hour17 = localStorage.getItem("17");
-$("#17 .description").val(hour17);
+let text9 = localStorage.getItem("9");
+$("#9 .description").val(text9);
+let text10 = localStorage.getItem("10");
+$("#10 .description").val(text10);
+let text11 = localStorage.getItem("11");
+$("#11 .description").val(text11);
+let text12 = localStorage.getItem("12");
+$("#12 .description").val(text12);
+let text13 = localStorage.getItem("13");
+$("#13 .description").val(text13);
+let text14 = localStorage.getItem("14");
+$("#14 .description").val(text14);
+let text15 = localStorage.getItem("15");
+$("#15 .description").val(text15);
+let text16 = localStorage.getItem("16");
+$("#16 .description").val(text16);
+let text17 = localStorage.getItem("17");
+$("#17 .description").val(text17);
