@@ -2,6 +2,7 @@ let today = moment().format('dddd, MMMM Do');
 let currentTime = moment().hours();
 let timeIds = $(".row");
 let plannerText = [];
+
 let storePlans = JSON.parse(localStorage.getItem("planner-storage"));
 
 $("#currentDay").text(today);
@@ -26,8 +27,8 @@ $(".saveBtn").on("click", function() {
     let textValue = $(this).siblings(".description").val();
     let timeBlock = $(this).parent().attr("id");
 
-    console.log('text:', textValue);
     console.log('time:', timeBlock);
+    console.log('text:', textValue);
 
     localStorage.setItem(timeBlock, textValue);
 });
